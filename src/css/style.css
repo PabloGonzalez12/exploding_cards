@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --baseFont: 18px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/fondo.jpeg);
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    overflow: hidden;
+}
+
+.button, input{
+    padding: var(--baseFont);
+    border-radius: var(--baseFont);
+    background-color: rgb(132, 170, 253);
+    cursor: pointer;
+    z-index: 2;
+}
+
+input{
+    background-color: rgb(255, 145, 145);
+    cursor: pointer;
+}
+
+.container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--baseFont);
+}
+
+
+.card{
+    height: 500px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vh;
+    border: 10px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.537);
+}
+
+.card div:first-of-type, .card div:last-of-type{
+    display: flex;
+    gap: 10px;
+}
+
+.bottom{
+    rotate: 180deg;
+}
+
+.card div div{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.value{
+    text-align: center;
+    font-weight: bold;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.black{
+    background: linear-gradient(to bottom, black, rgb(60, 57, 57));
+    color: white;
+}
+
+.white{
+    background: linear-gradient(to bottom, rgb(147, 147, 147), rgb(255, 255, 255));
+}
+
+.green{
+    background: linear-gradient(to bottom, rgb(0, 115, 35), rgb(149, 255, 186));
+}
+
+.red{
+    background: linear-gradient(to bottom, rgb(131, 0, 0), rgb(255, 79, 79));
+}
+
+.blue{
+    background: linear-gradient(to bottom, rgb(0, 0, 238), rgb(123, 153, 255));
+    color: white;
+}
